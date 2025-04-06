@@ -26,7 +26,7 @@ interface GeneratedCase {
 }
 
 export default function Home(): React.ReactElement {
-  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
   const [caseName, setCaseName] = useState<string>("");
   const [caseStudies, setCaseStudies] = useState<CaseStudy[]>([
     { id: 1, name: "E-commerce Rebrand Case Study", date: "April 5, 2025" },
