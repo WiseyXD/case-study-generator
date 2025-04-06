@@ -42,11 +42,12 @@ export async function POST(req: Request) {
 
     // Return a streaming response - using dataStream which is compatible with useChat
     return result.toDataStreamResponse();
-  } catch (error: any) {
+  } catch (error: unknown) {
+    const errorMessage = error as { message: string };
     console.error("Error in case study API route:", error);
     return new Response(
       JSON.stringify({
-        error: error.message || "Failed to generate case study",
+        error: errorMessage.message || "Failed to generate case study",
       }),
       { status: 500, headers: { "Content-Type": "application/json" } },
     );

@@ -123,8 +123,8 @@ export function Chat({
               <div className="max-w-md space-y-4">
                 <h2 className="text-2xl font-bold">Generate a Case Study</h2>
                 <p className="text-muted-foreground">
-                  Describe your project, challenge, or success story, and I'll
-                  generate a comprehensive case study for you.
+                  Describe your project, challenge, or success story, and
+                  I&apos;ll generate a comprehensive case study for you.
                 </p>
                 <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 mt-6">
                   {suggestions.map((suggestion, index) => (
